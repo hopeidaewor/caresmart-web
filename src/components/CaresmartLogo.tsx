@@ -1,5 +1,5 @@
 export default function CaresmartLogo({ size = "default" }: { size?: "default" | "small" }) {
-  const svgSize = size === "small" ? "w-8 h-8" : "w-12 h-12";
+  const svgSize = size === "small" ? "h-6" : "h-10";
 
   return (
     <svg
