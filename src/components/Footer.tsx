@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CaresmartLogo from "./CaresmartLogo";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -9,7 +10,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* About */}
           <div>
-            <h3 className="font-bold text-lg text-white mb-4">Caresmart</h3>
+            <div className="mb-4">
+              <CaresmartLogo size="small" />
+            </div>
             <p className="text-gray-300 text-sm">
               Smarter case management for better care outcomes in Georgia.
             </p>
