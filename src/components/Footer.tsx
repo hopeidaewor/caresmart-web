@@ -11,7 +11,7 @@ export default function Footer() {
           {/* About */}
           <div>
             <div className="mb-4">
-              <CaresmartLogo size="small" />
+              <CaresmartLogo size="small" textColor="white" />
             </div>
             <p className="text-gray-300 text-sm">
               Smarter case management for better care outcomes in Georgia.
