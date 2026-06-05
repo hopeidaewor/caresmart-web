@@ -57,7 +57,7 @@ export default function Contact() {
             <Card>
               <h3 className="text-xl font-bold text-gray-900 mb-6">📞 Phone</h3>
               <p className="text-gray-700">
-                <a href="tel:+18338327278" className="text-blue-600 hover:underline">
+                <a href="tel:+18338327278" className="text-[#1C93D1] hover:underline">
                   (833) CARESMART
                 </a>
               </p>
@@ -66,7 +66,7 @@ export default function Contact() {
             <Card>
               <h3 className="text-xl font-bold text-gray-900 mb-6">✉️ Email</h3>
               <p className="text-gray-700">
-                <a href="mailto:info@caresmart.com" className="text-blue-600 hover:underline">
+                <a href="mailto:info@caresmart.com" className="text-[#1C93D1] hover:underline">
                   info@caresmart.com
                 </a>
               </p>
@@ -97,7 +97,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1C93D1] focus:border-transparent"
                     placeholder="Your name"
                   />
                 </div>
@@ -111,7 +111,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1C93D1] focus:border-transparent"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -127,7 +127,7 @@ export default function Contact() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1C93D1] focus:border-transparent"
                     placeholder="(555) 000-0000"
                   />
                 </div>
@@ -139,7 +139,7 @@ export default function Contact() {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1C93D1] focus:border-transparent"
                   >
                     <option value="">Select a subject</option>
                     <option value="inquiry">General Inquiry</option>
@@ -161,7 +161,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1C93D1] focus:border-transparent"
                   placeholder="Tell us more about your inquiry..."
                 />
               </div>
@@ -177,7 +177,7 @@ export default function Contact() {
       <HorizontalDivider className="my-8" />
 
       {/* Additional Resources */}
-      <section className="py-16 md:py-24 px-4 bg-gradient-to-r from-blue-50 to-green-50">
+      <section className="py-16 md:py-24 px-4 bg-gradient-to-r from-[#EBF6FD] to-green-50">
         <div className="max-w-4xl mx-auto">
           <SectionHeading title="Quick Links" subtitle="Find what you're looking for" />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -186,7 +186,7 @@ export default function Contact() {
               <p className="text-gray-600 mb-4">
                 Learn more about our comprehensive case management services.
               </p>
-              <a href="/services" className="text-blue-600 font-semibold hover:underline">
+              <a href="/services" className="text-[#1C93D1] font-semibold hover:underline">
                 View Services →
               </a>
             </Card>
@@ -196,7 +196,7 @@ export default function Contact() {
               <p className="text-gray-600 mb-4">
                 Interested in a career with Caresmart? Check out our open positions.
               </p>
-              <a href="/careers" className="text-blue-600 font-semibold hover:underline">
+              <a href="/careers" className="text-[#1C93D1] font-semibold hover:underline">
                 View Careers →
               </a>
             </Card>
@@ -206,7 +206,7 @@ export default function Contact() {
               <p className="text-gray-600 mb-4">
                 Discover our mission, values, and commitment to excellence.
               </p>
-              <a href="/about" className="text-blue-600 font-semibold hover:underline">
+              <a href="/about" className="text-[#1C93D1] font-semibold hover:underline">
                 Learn More →
               </a>
             </Card>

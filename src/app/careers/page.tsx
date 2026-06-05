@@ -111,7 +111,7 @@ export default function Careers() {
       <HorizontalDivider className="my-8" />
 
       {/* Culture Section */}
-      <section className="py-16 md:py-24 px-4 bg-gradient-to-r from-blue-50 to-green-50">
+      <section className="py-16 md:py-24 px-4 bg-gradient-to-r from-[#EBF6FD] to-green-50">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
@@ -156,7 +156,7 @@ export default function Careers() {
                     <div className="flex-1">
                       <h3 className="text-2xl font-bold text-gray-900 mb-2">{job.title}</h3>
                       <div className="flex flex-wrap gap-3 mb-4">
-                        <span className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded text-sm font-medium">
+                        <span className="inline-block bg-[#EBF6FD] text-[#0F5A82] px-3 py-1 rounded text-sm font-medium">
                           {job.department}
                         </span>
                         <span className="inline-block bg-green-100 text-green-800 px-3 py-1 rounded text-sm font-medium">
@@ -190,12 +190,12 @@ export default function Careers() {
       <HorizontalDivider className="my-8" />
 
       {/* Application Process */}
-      <section className="py-16 md:py-24 px-4 bg-gradient-to-r from-blue-50 to-green-50">
+      <section className="py-16 md:py-24 px-4 bg-gradient-to-r from-[#EBF6FD] to-green-50">
         <div className="max-w-4xl mx-auto">
           <SectionHeading title="Our Hiring Process" centered={false} />
           <div className="space-y-6">
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">
+              <div className="flex-shrink-0 w-10 h-10 bg-[#1C93D1] text-white rounded-full flex items-center justify-center font-bold">
                 1
               </div>
               <div>
@@ -206,7 +206,7 @@ export default function Careers() {
               </div>
             </div>
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">
+              <div className="flex-shrink-0 w-10 h-10 bg-[#1C93D1] text-white rounded-full flex items-center justify-center font-bold">
                 2
               </div>
               <div>
@@ -217,7 +217,7 @@ export default function Careers() {
               </div>
             </div>
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">
+              <div className="flex-shrink-0 w-10 h-10 bg-[#1C93D1] text-white rounded-full flex items-center justify-center font-bold">
                 3
               </div>
               <div>
@@ -228,7 +228,7 @@ export default function Careers() {
               </div>
             </div>
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">
+              <div className="flex-shrink-0 w-10 h-10 bg-[#1C93D1] text-white rounded-full flex items-center justify-center font-bold">
                 4
               </div>
               <div>

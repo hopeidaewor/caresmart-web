@@ -37,7 +37,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <Card variant="highlight" className="p-8">
-              <h3 className="text-2xl font-bold text-blue-600 mb-4">Our Mission</h3>
+              <h3 className="text-2xl font-bold text-[#1C93D1] mb-4">Our Mission</h3>
               <p className="text-gray-700 text-lg leading-relaxed">
                 To deliver person-centered case management that empowers individuals to achieve
                 their health and life goals with dignity and support.
@@ -57,7 +57,7 @@ export default function About() {
       <HorizontalDivider className="my-8" />
 
       {/* Our Story */}
-      <section className="py-16 md:py-24 px-4 bg-gradient-to-r from-blue-50 to-green-50">
+      <section className="py-16 md:py-24 px-4 bg-gradient-to-r from-[#EBF6FD] to-green-50">
         <div className="max-w-4xl mx-auto">
           <SectionHeading title="Our Story" centered={false} underline={false} />
           <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
@@ -101,7 +101,7 @@ export default function About() {
       <HorizontalDivider className="my-8" />
 
       {/* Why Choose Us */}
-      <section className="py-16 md:py-24 px-4 bg-gradient-to-r from-blue-50 to-green-50">
+      <section className="py-16 md:py-24 px-4 bg-gradient-to-r from-[#EBF6FD] to-green-50">
         <div className="max-w-4xl mx-auto">
           <SectionHeading title="Why Choose Caresmart" centered={false} />
           <div className="space-y-6">

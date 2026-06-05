@@ -16,9 +16,9 @@ export default function Card({
   const baseStyles = "rounded-lg p-6";
   const variants = {
     default: "bg-white border border-gray-200",
-    highlight: "bg-gradient-to-br from-blue-50 to-green-50 border border-blue-200",
+    highlight: "bg-gradient-to-br from-[#EBF6FD] to-green-50 border border-[#A3D7F5]",
   };
-  const hoverStyles = hoverable ? "hover:shadow-lg hover:border-blue-400 transition-all" : "";
+  const hoverStyles = hoverable ? "hover:shadow-lg hover:border-[#1C93D1] transition-all" : "";
 
   return (
     <div className={`${baseStyles} ${variants[variant]} ${hoverStyles} ${className}`}>

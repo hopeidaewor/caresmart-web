@@ -23,17 +23,17 @@ export default function Footer() {
             <h4 className="font-semibold text-white mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/" className="text-gray-300 hover:text-blue-400 transition">
+                <Link href="/" className="text-gray-300 hover:text-[#5AB8E2] transition">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-300 hover:text-blue-400 transition">
+                <Link href="/about" className="text-gray-300 hover:text-[#5AB8E2] transition">
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-300 hover:text-blue-400 transition">
+                <Link href="/services" className="text-gray-300 hover:text-[#5AB8E2] transition">
                   Services
                 </Link>
               </li>
@@ -45,12 +45,12 @@ export default function Footer() {
             <h4 className="font-semibold text-white mb-4">Resources</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/contact" className="text-gray-300 hover:text-blue-400 transition">
+                <Link href="/contact" className="text-gray-300 hover:text-[#5AB8E2] transition">
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link href="/careers" className="text-gray-300 hover:text-blue-400 transition">
+                <Link href="/careers" className="text-gray-300 hover:text-[#5AB8E2] transition">
                   Careers
                 </Link>
               </li>
@@ -73,10 +73,10 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
             <p>&copy; {currentYear} Caresmart. All rights reserved.</p>
             <div className="flex gap-6 mt-4 md:mt-0">
-              <Link href="#" className="hover:text-blue-400 transition">
+              <Link href="#" className="hover:text-[#5AB8E2] transition">
                 Privacy Policy
               </Link>
-              <Link href="#" className="hover:text-blue-400 transition">
+              <Link href="#" className="hover:text-[#5AB8E2] transition">
                 Terms of Service
               </Link>
             </div>

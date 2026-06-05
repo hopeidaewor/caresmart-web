@@ -118,7 +118,7 @@ export default function Services() {
       <HorizontalDivider className="my-8" />
 
       {/* Process Flow */}
-      <section className="py-16 md:py-24 px-4 bg-gradient-to-r from-blue-50 to-green-50">
+      <section className="py-16 md:py-24 px-4 bg-gradient-to-r from-[#EBF6FD] to-green-50">
         <div className="max-w-6xl mx-auto">
           <SectionHeading
             title="How It Works"
@@ -128,7 +128,7 @@ export default function Services() {
             {process.map((item, index) => (
               <div key={item.step}>
                 <Card className="text-center h-full">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-green-500 text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#1C93D1] to-green-500 text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">
                     {item.step}
                   </div>
                   <h4 className="font-bold text-gray-900 mb-2">{item.title}</h4>

@@ -17,8 +17,8 @@ export default function HeroSection({
     <section
       className={`py-20 md:py-32 px-4 ${
         backgroundGradient
-          ? "bg-gradient-to-r from-blue-600 to-blue-400"
-          : "bg-blue-600"
+          ? "bg-gradient-to-r from-[#1C93D1] to-[#5AB8E2]"
+          : "bg-[#1C93D1]"
       } text-white`}
     >
       <div className="max-w-4xl mx-auto text-center">

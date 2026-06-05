@@ -9,7 +9,7 @@ export default function HorizontalDivider({
 }: HorizontalDividerProps) {
   const variants = {
     light: "bg-gray-200",
-    gradient: "bg-gradient-to-r from-blue-500 via-green-500 to-transparent",
+    gradient: "bg-gradient-to-r from-[#1C93D1] via-green-500 to-transparent",
   };
 
   return (
