@@ -11,8 +11,22 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Caresmart - Case Management Services",
-  description: "Smarter case management for better care outcomes. Serving Georgia with compassion and expertise.",
+  title: {
+    default: "Caresmart | Case Management Services in Georgia",
+    template: "%s | Caresmart",
+  },
+  description:
+    "Caresmart is a Georgia-based case management company helping individuals and families navigate long-term care through the Elderly and Disabled Waiver Program (EDWP).",
+  metadataBase: new URL("https://caresmartllc.net"),
+  openGraph: {
+    siteName: "Caresmart",
+    type: "website",
+    locale: "en_US",
+    images: [{ url: "/hero-image.png", width: 1200, height: 630, alt: "Caresmart" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({
@@ -21,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${plusJakartaSans.variable} h-full antialiased scroll-smooth`}>
+    <html lang="en" className={`${plusJakartaSans.variable} h-full antialiased`} data-scroll-behavior="smooth" style={{ scrollBehavior: "smooth" }}>
       <body className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-1">{children}</main>

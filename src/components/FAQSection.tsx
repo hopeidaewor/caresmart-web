@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import FadeUp from "./FadeUp";
 
 const faqs = [
   {
@@ -39,7 +40,7 @@ export default function FAQSection() {
     <section className="py-20 md:py-28 px-4 bg-white">
       <div className="max-w-3xl mx-auto">
         {/* Header */}
-        <div className="mb-12">
+        <FadeUp className="mb-12">
           <span className="text-[#1C93D1] font-semibold text-sm uppercase tracking-widest">
             FAQ
           </span>
@@ -49,39 +50,41 @@ export default function FAQSection() {
           <p className="text-gray-500 text-lg leading-relaxed">
             Have questions about case management or our services? We've answered the most common ones below.
           </p>
-        </div>
+        </FadeUp>
 
         {/* Accordion */}
         <div className="divide-y divide-gray-200">
           {faqs.map((faq, i) => (
-            <div key={i}>
-              <button
-                onClick={() => toggle(i)}
-                className="w-full flex justify-between items-center py-6 text-left group"
-              >
-                <span className="text-gray-900 font-semibold text-lg pr-8 group-hover:text-[#1C93D1] transition-colors">
-                  {faq.question}
-                </span>
-                <span
-                  className={`flex-shrink-0 w-8 h-8 rounded-full border-2 border-gray-200 flex items-center justify-center text-gray-500 transition-all duration-300 ${
-                    openIndex === i
-                      ? "bg-[#1C93D1] border-[#1C93D1] text-white rotate-45"
-                      : "group-hover:border-[#1C93D1] group-hover:text-[#1C93D1]"
+            <FadeUp key={i} delay={i * 80}>
+              <div>
+                <button
+                  onClick={() => toggle(i)}
+                  className="w-full flex justify-between items-center py-6 text-left group"
+                >
+                  <span className="text-gray-900 font-semibold text-lg pr-8 group-hover:text-[#1C93D1] transition-colors">
+                    {faq.question}
+                  </span>
+                  <span
+                    className={`flex-shrink-0 w-8 h-8 rounded-full border-2 border-gray-200 flex items-center justify-center text-gray-500 transition-all duration-300 ${
+                      openIndex === i
+                        ? "bg-[#1C93D1] border-[#1C93D1] text-white rotate-45"
+                        : "group-hover:border-[#1C93D1] group-hover:text-[#1C93D1]"
+                    }`}
+                  >
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                      <path d="M6 1v10M1 6h10" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                    </svg>
+                  </span>
+                </button>
+                <div
+                  className={`overflow-hidden transition-all duration-300 ease-out ${
+                    openIndex === i ? "max-h-96 pb-6" : "max-h-0"
                   }`}
                 >
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                    <path d="M6 1v10M1 6h10" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                  </svg>
-                </span>
-              </button>
-              <div
-                className={`overflow-hidden transition-all duration-300 ease-out ${
-                  openIndex === i ? "max-h-96 pb-6" : "max-h-0"
-                }`}
-              >
-                <p className="text-gray-600 text-base leading-relaxed">{faq.answer}</p>
+                  <p className="text-gray-600 text-base leading-relaxed">{faq.answer}</p>
+                </div>
               </div>
-            </div>
+            </FadeUp>
           ))}
         </div>
       </div>

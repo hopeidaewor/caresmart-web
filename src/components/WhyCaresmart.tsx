@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Button from "./Button";
+import FadeUp from "./FadeUp";
 
 const slides = [
   {
@@ -72,14 +73,14 @@ export default function WhyCaresmart() {
   }, []);
 
   return (
-    <section className="py-20 md:py-28 px-4" style={{ backgroundColor: "#F3FFFE" }}>
+    <section className="py-20 md:py-28 px-4" style={{ backgroundColor: "#EDF7F6" }}>
       <div className="max-w-6xl mx-auto">
 
         {/* Top: text left + carousel right */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-16">
 
           {/* Left */}
-          <div>
+          <FadeUp>
             <span className="text-[#1C93D1] font-semibold text-sm uppercase tracking-widest block mb-4">
               Why Caresmart
             </span>
@@ -91,8 +92,8 @@ export default function WhyCaresmart() {
               coordinators, proven processes, and a genuine commitment to improving every
               client's quality of life.
             </p>
-            <Button href="/services">Explore Our Services</Button>
-          </div>
+            <Button href="/careers">We Are Hiring</Button>
+          </FadeUp>
 
           {/* Right — image carousel */}
           <div className="relative rounded-2xl overflow-hidden aspect-[4/3] bg-gray-100">
@@ -143,13 +144,13 @@ export default function WhyCaresmart() {
 
         {/* Bottom: 3x2 feature grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-10">
-          {features.map((f) => (
-            <div key={f.title}>
+          {features.map((f, i) => (
+            <FadeUp key={f.title} delay={i * 80}>
               <h4 className="text-[#1C93D1] font-bold text-sm uppercase tracking-widest mb-3">
                 {f.title}
               </h4>
               <p className="text-gray-600 text-sm leading-relaxed">{f.description}</p>
-            </div>
+            </FadeUp>
           ))}
         </div>
 

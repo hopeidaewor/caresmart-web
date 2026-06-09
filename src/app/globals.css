@@ -1,25 +1,37 @@
 @import "tailwindcss";
 
+/* ── Design tokens ─────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-primary:    #1C93D1;
+  --color-primary-hover: #8EDD8E;
+  --color-teal-bg:    #EDF7F6;
+  --color-dark:       #111827;
+  --color-heading:    #111827;
+  --font-sans:        var(--font-plus-jakarta-sans), sans-serif;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: #ffffff;
+  --color-foreground: #171717;
   --font-sans: var(--font-plus-jakarta-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ── Base ──────────────────────────────────────────────── */
+body {
+  font-family: var(--font-sans);
+  background: #ffffff;
+  color: #171717;
+  -webkit-font-smoothing: antialiased;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-plus-jakarta-sans), sans-serif;
+/* ── Accessibility: focus-visible ring ────────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Remove focus ring for mouse/touch users */
+:focus:not(:focus-visible) {
+  outline: none;
 }

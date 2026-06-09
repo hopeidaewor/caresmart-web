@@ -30,19 +30,35 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`font-medium transition-colors ${
-                  isActive(item.href)
-                    ? "text-[#1C93D1] border-b-2 border-[#1C93D1]"
-                    : "text-gray-700 hover:text-[#1C93D1]"
-                }`}
-              >
-                {item.label}
-              </Link>
-            ))}
+            {navItems.map((item) =>
+              item.href === "/careers" ? (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="group relative inline-flex items-center gap-2 px-5 py-2 rounded-full font-semibold text-sm transition-colors duration-300 overflow-hidden"
+                  style={{ backgroundColor: "#CBFF4D", color: "#0a1416" }}
+                  onMouseEnter={e => (e.currentTarget.style.backgroundColor = "#b8f000")}
+                  onMouseLeave={e => (e.currentTarget.style.backgroundColor = "#CBFF4D")}
+                >
+                  <span className="relative overflow-hidden block" style={{ height: "1.5em", lineHeight: "1.5" }}>
+                    <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full" style={{ lineHeight: "1.5" }}>We&apos;re Hiring</span>
+                    <span className="absolute inset-x-0 top-full transition-transform duration-300 ease-out group-hover:-translate-y-full" style={{ lineHeight: "1.5" }}>We&apos;re Hiring</span>
+                  </span>
+                </Link>
+              ) : (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`font-medium transition-colors ${
+                    isActive(item.href)
+                      ? "text-[#1C93D1] border-b-2 border-[#1C93D1]"
+                      : "text-gray-700 hover:text-[#1C93D1]"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              )
+            )}
           </div>
 
           {/* Mobile Menu Button */}

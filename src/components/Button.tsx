@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import Link from "next/link";
 
 interface ButtonProps {
   children: ReactNode;
@@ -93,10 +94,18 @@ export default function Button({
   );
 
   if (href) {
+    const isExternal = href.startsWith("http") || href.startsWith("mailto") || href.startsWith("tel");
+    if (isExternal) {
+      return (
+        <a href={href} className={buttonClass} target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noopener noreferrer" : undefined}>
+          {content}
+        </a>
+      );
+    }
     return (
-      <a href={href} className={buttonClass}>
+      <Link href={href} className={buttonClass}>
         {content}
-      </a>
+      </Link>
     );
   }
 
