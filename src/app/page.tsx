@@ -6,7 +6,7 @@ import FadeUp from "@/components/FadeUp";
 import ServiceCard from "@/components/ServiceCard";
 
 export const metadata: Metadata = {
-  title: "Georgia Case Management & EDWP Services",
+  title: { absolute: "Caresmart | Georgia Case Management & EDWP Services" },
   description:
     "Caresmart provides expert case management, care coordination, and community resource navigation for Georgia's elderly and disabled populations through the EDWP program.",
   openGraph: {
