@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Careers | Join Our Team",
     description: "Join our team of dedicated case managers and healthcare professionals serving Georgia.",
-    url: "https://caresmartllc.net/careers",
+    url: "https://caresmart.health/careers",
   },
 };
 

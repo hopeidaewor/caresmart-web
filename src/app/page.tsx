@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Georgia Case Management & EDWP Services",
     description:
       "Expert case management and EDWP navigation for Georgia's elderly and disabled populations.",
-    url: "https://caresmartllc.net",
+    url: "https://caresmart.health",
   },
 };
 

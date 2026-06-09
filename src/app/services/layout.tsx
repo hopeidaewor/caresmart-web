@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: "Our Services | Caresmart",
     description:
       "Case management, assessments, family support, and community resources for Georgia's elderly and disabled populations.",
-    url: "https://caresmartllc.net/services",
+    url: "https://caresmart.health/services",
   },
 };
 

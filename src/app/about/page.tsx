@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About | Mission, Values & Team",
     description: "Our mission, values, and the team behind Georgia's trusted case management company.",
-    url: "https://caresmartllc.net/about",
+    url: "https://caresmart.health/about",
   },
 };
 

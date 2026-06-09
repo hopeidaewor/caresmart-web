@@ -114,7 +114,7 @@ export default function OGImage() {
               color: "#1C93D1",
             }}
           >
-            caresmartllc.net
+            caresmart.health
           </div>
           <div
             style={{

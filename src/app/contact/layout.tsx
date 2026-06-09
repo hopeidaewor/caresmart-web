@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: "Contact Us",
     description:
       "Reach our team by phone or email. We're here to help with case management questions and service referrals.",
-    url: "https://caresmartllc.net/contact",
+    url: "https://caresmart.health/contact",
   },
 };
 

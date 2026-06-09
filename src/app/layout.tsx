@@ -17,12 +17,12 @@ export const metadata: Metadata = {
   },
   description:
     "Caresmart is a Georgia-based case management company helping individuals and families navigate long-term care through the Elderly and Disabled Waiver Program (EDWP).",
-  metadataBase: new URL("https://caresmartllc.net"),
+  metadataBase: new URL("https://caresmart.health"),
   openGraph: {
     siteName: "Caresmart",
     type: "website",
     locale: "en_US",
-    url: "https://caresmartllc.net",
+    url: "https://caresmart.health",
     images: [
       {
         url: "/opengraph-image",
