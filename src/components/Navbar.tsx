@@ -76,7 +76,18 @@ export default function Navbar() {
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
           <div className="md:hidden pb-4 border-t border-gray-200">
-            {navItems.map((item) => (
+            {navItems.map((item) =>
+              item.href === "/careers" ? (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="flex items-center mx-4 my-2 px-5 py-2.5 rounded-full font-semibold text-sm justify-center"
+                  style={{ backgroundColor: "#CBFF4D", color: "#0a1416" }}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  We&apos;re Hiring
+                </Link>
+              ) : (
               <Link
                 key={item.href}
                 href={item.href}
@@ -89,7 +100,8 @@ export default function Navbar() {
               >
                 {item.label}
               </Link>
-            ))}
+              )
+            )}
           </div>
         )}
       </div>

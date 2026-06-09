@@ -193,13 +193,13 @@ export default function Services() {
 
           {/* Tab bar */}
           <FadeUp>
-            <div className="flex flex-wrap justify-center gap-2 mb-14">
-              <div className="inline-flex flex-wrap justify-center gap-2 bg-white rounded-2xl shadow-sm p-2">
+            <div className="flex justify-center mb-14">
+              <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-2 bg-white rounded-2xl shadow-sm p-2 w-full sm:w-auto">
                 {tabs.map((tab) => (
                   <button
                     key={tab}
                     onClick={() => setActiveTab(tab)}
-                    className={`px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 ${
+                    className={`w-full sm:w-auto px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 ${
                       activeTab === tab
                         ? "bg-[#1C93D1] text-white shadow-sm"
                         : "text-gray-500 hover:text-gray-900"
