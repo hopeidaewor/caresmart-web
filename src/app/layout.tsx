@@ -22,10 +22,20 @@ export const metadata: Metadata = {
     siteName: "Caresmart",
     type: "website",
     locale: "en_US",
-    images: [{ url: "/hero-image.png", width: 1200, height: 630, alt: "Caresmart" }],
+    url: "https://caresmartllc.net",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Caresmart — Georgia Case Management & EDWP Services",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
+    site: "@caresmart",
+    images: ["/opengraph-image"],
   },
 };
 
