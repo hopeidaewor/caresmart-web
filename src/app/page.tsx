@@ -83,7 +83,8 @@ export default function Home() {
           {/* Left — text */}
           <FadeUp delay={100}>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              Seamless coordination, Smarter care.
+              Seamless coordination,{" "}
+              <span className="block md:inline">Smarter care.</span>
             </h1>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-lg">
               We empower individuals and families across Georgia with expert-driven case management services.
